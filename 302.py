@@ -659,6 +659,6 @@ def choice_select():
 	
 	
 if __name__ == '__main__':
-	tool()
+	main()
 
 
