@@ -34,53 +34,6 @@ logo = """
  \033[1;93m(*)\033[1;92m Facebook : https://www.facebook.com/Sufyan.shabqadry
 \033[1;93m-----------------------------------------------------
 """
-def tool():
-	os.system("clear")
-	print("")
-	print(logo)
-	time.sleep(1)
-	print("First Put Tool Username...").center(50)
-	print("")
-	time.sleep(1)
-	username = raw_input("[!] Tool Username : ")
-	if username =="(sufyan)":
-		print("")
-		time.sleep(1)
-		print("\033[1;92mTool Username is correct").center(50)
-		print("")
-		time.sleep(1)
-		step_main()
-	else:
-		print("")
-		time.sleep(1)
-		print("\033[1;91mTool Username Is Invalid :) ").center(50)
-		print("")
-		time.sleep(1)
-		tool()
-def step_main():
-	os.system("clear")
-	print(logo)
-	print("")
-	time.sleep(1)
-	print("First Put Tool Password...").center(50)
-	print("")
-	time.sleep(1)
-	username = raw_input("[!] Tool Password : ")
-	if username =="(SAS)":
-		print("")
-		time.sleep(1)
-		print("\033[1;92mTool Password is correct").center(50)
-		print("")
-		time.sleep(1)
-		main()
-	else:
-		print("")
-		time.sleep(1)
-		print("\033[1;91mTool Password Is Invalid :) ").center(50)
-		print("")
-		time.sleep(1)
-		step_main()
-		
 def main():
 	os.system("clear")
 	print(logo)
